@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .mine-button {
+      position: absolute;
+      top: 1230px;
+      left: 700px;
+    }
+  </style>
+  <title>The Triangle Kitchens</title>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <!-- outer starts -->
+
+    <!-- navbar -->
+    <div class="container-fluid">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top text-light" id="nav">
+        <div class="container p-0">
+          <a class="navbar-brand" href="#" style="color: goldenrod; margin-left: 15px;"><i
+              class="bi bi-triangle"></i><span style="font-family:Californian FB; font-size: 15px;">&nbsp;The Triangle
+              Kitchens</span></a>
+
+          <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="bi bi-menu-button-wide-fill"
+              style="color: white; background-color: goldenrod; border-radius: 10px; padding-left: 40px; padding-right: 40px;"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#menu">Menu</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#event">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="index.html#chefs">Chefs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="contact-us.html">Contact Us</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar ends -->
+    </div>
+
+
+
+    <!-- upfront -->
+    <div class="container-fluid p-0">
+      <!-- upfront -->
+      <div id="bg">
+        <div id="bg-inner">
+          <p class="name"></p>
+          <script>
+            new Typed('.name', {
+              strings: ['The Triangle Kitchen'],
+              typeSpeed: 130,
+              backSpeed: 130,
+              loop: true,
+            });
+          </script>
+          <p class="name_descriptive"></p>
+          <script>
+            new Typed('.name_descriptive', {
+              strings: ['Where we an you both feels like mummy&#39;s cooked delight.'],
+              typeSpeed: 50,
+              backSpeed: 50,
+              loop: true,
+            });
+          </script>
+          <div style="text-align: center;">
+            <a href="index.html#menu" style=" color: white; text-decoration: none;"><button class="button1">Our
+                Menu</button></a>
+            <a href="Register.html" style=" color: white; text-decoration: none;"><button class="button2">Book
+                Table</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- upfront end -->
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <!-- outer ends -->
+    <hr>
+    <div class="container" id="here">
+
+      <p style="color:gray; text-align: center; font-size: 50px; font-weight: 200;">Register Here</p>
+      <p style="color:gray; text-align: center;font-size: 25px; margin-top: -30px; height: 30px;" class="reg"></p>
+      <hr width="200px" style="margin-right: auto; margin-left: auto; margin-top: -26px;">
+      <script>
+        new Typed('.reg', {
+          strings: ['Register with Us'],
+          typeSpeed: 100,
+          backSpeed: 100,
+          loop: true,
+        });
+      </script>
+      <div class="row my-5">
+
+        <div class="col-sm-12">
+          <form method="post" onsubmit="register(this);" action="reg.php">
+            <div class="row mb-4">
+              <div class="col-sm-6 mb-4">
+                <input type="text" class="form-control" placeholder="Enter Your Name" id="name" name="name" onfocus="def_style(this);" required />
+              </div>
+              <div class="col-sm-6 mb-4">
+                <input type="number" class="form-control" placeholder="Enter Your Contact Number" id="number" name="number"
+                  onfocus="def_style(this);" required />
+              </div>
+              <div class="col-sm-6 mb-4">
+                <input type="email" class="form-control" placeholder="Enter Your Email" id="email" name="email" onfocus="def_style(this);" required />
+              </div>
+
+              <div class="col-sm-6 mb-4">
+                <input type="password" class="form-control" placeholder="Enter Your Password" id="password" name="password" onfocus="def_style(this);" required />
+              </div>
+              <div class="col-sm-6 mb-4">
+                <input type="password" class="form-control" placeholder="Confirm Password" id="conf_password" name="cnfpasword"
+                  onfocus="def_style(this);" required />
+              </div>
+              <input type="submit" class="button" value="Register">
+              <button type="button" class="btn d-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                id="call_modal">
+                Launches modal of registration
+              </button>
+
+              <a href="login.html">Already Registered? Login.</a>
+              <div class="row">
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">The Triangle Kitchen</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                          aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" id="modal-body">
+                        <!-- Successfully Registered! Login. -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- footer -->
+      <p style="color:aliceblue; margin-left: 35%;">
+        &copy; All Right Reserverd <span style="color: red;">Developed by: Sheshank Gupta</span>
+      </p>
+    </div>
+  </div>
+</body>
+<script>
+  function register(e){
+    event.preventDefault();
+    var pass=document.getElementById('password');
+    var cnfpass=document.getElementById('conf_password');
+    if(pass.value===cnfpass.value){
+      if(pass.value.length>16 || pass.value.length<8){
+        document.getElementById('modal-body').innerHTML='Password length must be between 8 and 16 characters';
+        document.getElementById('call_modal').click();
+        document.getElementById('conf_password').style='border:3px solid red; background-color:rgba(240, 191, 191, 0.9);';
+        document.getElementById('password').style='border:3px solid red; background-color:rgba(240, 191, 191, 0.9);';
+      } else{
+        var regularExpression = /^(?=.*[0-9])(?=.*[- ?!@#$%^&*\/\\])(?=.*[A-Z])(?=.*[a-z])[a-zA-Z0-9- ?!@#$%^&*\/\\]{8,16}$/;
+        if(!regularExpression.test(pass.value)) {
+          document.getElementById('modal-body').innerHTML="password should contain atleast one uppercase, one lowercase, one number and one special character";
+          document.getElementById('call_modal').click();
+          document.getElementById('conf_password').style='border:3px solid red; background-color:rgba(240, 191, 191, 0.9);';
+          document.getElementById('password').style='border:3px solid red; background-color:rgba(240, 191, 191, 0.9);';
+          // alert();
+        } else{
+          var pass_val=true;
+        }
+      }
+    } else{
+      document.getElementById('modal-body').innerHTML='Password donot matches to confirm password';
+      document.getElementById('call_modal').click();
+      document.getElementById('conf_password').style='border:3px solid red; background-color:rgba(240, 191, 191, 0.9);';
+    }
+    
+    var phoneno = /^\d{10}$/;
+    var phone=document.getElementById('number').value;
+    if(phoneno.test(phone)){
+      var phn_val=true;
+    } else{
+      document.getElementById('modal-body').innerHTML='Phone number should be 10 digits';
+      document.getElementById('call_modal').click();
+      document.getElementById('number').style='border:3px solid red; background-color:rgba(240, 191, 191, 0.9);';
+    }
+    
+    
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    var email=document.getElementById('email').value;
+    if(email.match(mailformat))
+    {
+      var email_val=true;
+    } else{
+      document.getElementById('modal-body').innerHTML='Invalid email address';
+      document.getElementById('call_modal').click();
+      document.getElementById('email').style='border:3px solid red; background-color:rgba(240, 191, 191, 0.9);';
+    }
+    
+    if(email_val==true && phn_val==true && pass_val==true){
+      e.submit();
+    }
+  }
+  if(window.location.hash=='#DuplicateEntry'){
+    document.getElementById('modal-body').innerHTML='Duplicate Entry, Please try with different combination of parameters';
+    document.getElementById('call_modal').click();
+    document.getElementById('email').style='border:3px solid red; background-color:rgba(240, 191, 191, 0.9);';
+    document.getElementById('number').style='border:3px solid red; background-color:rgba(240, 191, 191, 0.9);';
+  }
+  function def_style(e){
+    e.style='';
+  }
+</script>
+
+</html>
